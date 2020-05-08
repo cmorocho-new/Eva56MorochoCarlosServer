@@ -52,7 +52,7 @@ public class LibroDTO extends GeneralDTO implements Serializable {
     
 	@Override
 	public String toString() {
-		return "[ " + codigo + " ] - " + nombre;
+		return "[ " + codigo + " ] - " + nombre + " AUTOR: " + autor;
 	}
 
 }
