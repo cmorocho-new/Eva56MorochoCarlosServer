@@ -2,7 +2,6 @@ package ec.edu.ups.servicio;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Enumeration;
 
 import javax.inject.Inject;
 import javax.servlet.ServletException;
@@ -31,7 +30,7 @@ public class WebServicioLibro extends HttpServlet {
 		doc.append("<h4> -- -- -- -- -- -- -- -- -- -- <h4>");
 		try {
 			LibroDTO libro = libreriaON.buscarLibro(codigo);
-		    doc.append("<h5>" + libro.toString( )+ "<h5>");
+		    doc.append("<h5>" + libro.toString() + "<h5>");
 		}catch (GeneralExeption e) {
 			doc.append("<h5> LIBRO NO ENCONTRADO <h5>");
 		}
